@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Would you Rather?</title>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+</head>
+
+<body>
+    <script src="jquery.js"></script>
+
+
+
+    <header>
+        <a class="logo" href="index.html">
+            <img src="image.svg" alt="logo">
+        </a>
+
+
+        <nav>
+            <ul>
+                <li>View Categories &#9662;
+                    <ul>
+                        <li><a href="mostpopular.html">Most Popular</a></li>
+                        <li><a href="mostliked.html">Most Liked</a></li>
+                        <li><a href="mostdisliked.html">Most Disliked</a></li>
+                        <li><a href="mostcommented.html">Most Commented On</a></li>
+                    </ul>
+                </li>
+                <li><a href="createquestion.html">Create a Question</a></li>
+                <li><a href="createaccount.html">Create an Account</a></li>
+            </ul>
+
+
+        </nav>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
+
+        <form id="signin" action="/action_page.php">
+
+            <div>
+                <label>Username: <input type="text" name="username" value="" required></label>
+                <label>Password: <input type="password" name="password" value="" required></label>
+
+                <input type="submit" value="Sign In">
+            </div>
+
+        </form>
+
+    </header>
+
+    <div class="hamburgerbackground"></div>
+
+    <ul class="mobilenav">
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="createquestion.html">Create A Question</a></li>
+        <li><a href="createaccount.html">Create An Account</a></li>
+        <li><a href="loginpage.html">Account Login</a></li>
+    </ul>
+
+    <main class="wrapper">
+        <section id="leftside">
+            <h2> </h2>
+            <img id="leftimage" src="https://live.staticflickr.com/65535/49095958702_463981c1b8_h.jpg" alt="leftimage">
+            <button id="leftquestion">Select</button>
+        </section>
+        <section id="rightside">
+            <h2> </h2>
+            <img id="rightimage" src="https://live.staticflickr.com/65535/49095958702_463981c1b8_h.jpg" alt="right">
+            <button id="rightquestion">Select</button>
+        </section>
+    </main>
+
+    <footer>
+        
+        
+         <form class="comments" action="/action_page.php">
+
+            <div>
+                <label>Comment: <input type="text" name="comment" value=""></label>
+                <input type="submit" value="Submit">
+                <input type="button" value="Like">
+                <input type="button" value="Dislike">
+                <p>user812: This question is funny</p>
+                <p>user101: Not really</p>
+                <p>user004: IDK he has a point.</p>
+                <p>user420: lol</p>
+                <p>Sub Comment</p>
+                <p>Sub Comment</p>
+
+            </div>
+
+        </form>
+        
+    </footer>
+
+
+    <script>
+        $(document).ready(function() {
+});
+
+    </script>
+
+</body>
+
+</html>
