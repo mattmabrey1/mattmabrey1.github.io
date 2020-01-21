@@ -105,7 +105,7 @@ footer p:first-of-type {
 .wrapper {
     padding: 1em;
     display: grid;
-    grid-template-columns: 10fr;
+    grid-template-columns: 6fr 3.3fr;
     width: 100%;
     height: auto;
 
@@ -119,12 +119,6 @@ footer p:first-of-type {
     line-height: 1.5em;
 }
 
-
-#leftside {
-    grid-column-start: 1;
-    grid-column-end: 7;
-
-}
 
 #leftside a {
     text-decoration: underline;
@@ -155,11 +149,6 @@ footer p:first-of-type {
     color: #333333;
 }
 
-#rightside {
-    grid-column-start: 7;
-    grid-column-end: 10;
-
-}
 
 #rightside h2 {
     margin: 0;
