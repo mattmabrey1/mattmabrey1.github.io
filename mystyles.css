@@ -236,7 +236,7 @@ footer p:first-of-type {
 
 @media screen and (max-width: 840px) {
     .wrapper {
-        width: 93%;
+        width: 90%;
         display: block;
     }
 
