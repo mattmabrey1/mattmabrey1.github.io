@@ -1,0 +1,306 @@
+html,
+body {
+    background-color: #eeeeee;
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 100%;
+}
+
+
+
+/* ----- TYPOGRAPHY----- */
+
+h2 {
+    font-size: 2em;
+    color: #05386B;
+    padding-top: .3em;
+    margin-top: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+h3 {
+    text-align: center;
+    margin-bottom: 0;
+    font-variant: normal;
+}
+
+
+/* ----- COMMON / UTILITY ELEMENTS----- */
+
+.wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+    -webkit-transition: color 0.30s;
+    transition: color 0.30s;
+
+}
+
+
+a:hover {
+    color: blue;
+}
+
+
+
+
+
+/* ----- HEADER and NAV -----*/
+header {
+    text-decoration: none;
+    background: #fafafa;
+    padding: 0em;
+    margin: 0;
+    text-align: center;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 1em;
+    font-family: 'Rokkitt', sans-serif;
+    font-weight: 300;
+    letter-spacing: .1em;
+}
+
+
+
+/* ----- FOOTER -----*/
+footer {
+    background: #fafafa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    color: #05386B;
+    font-size: .7em;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer p:first-of-type {
+    padding-left: 10%;
+}
+
+
+
+
+/* ----- STRUCTURAL LAYOUT -----*/
+
+.wrapper {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 6fr 3.5fr;
+    width: 100%;
+    height: auto;
+
+}
+
+.wrapper section {
+    padding: 1em;
+}
+
+.wrapper p {
+    line-height: 1.5em;
+}
+
+#leftside {
+    padding-top: 0;
+    border-radius: 1em;
+}
+
+#leftside a {
+    text-decoration: underline;
+    color: blue;
+}
+
+#leftside div {
+    background: #ffffff;
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    padding-bottom: .1em;
+    border-radius: 1em;
+}
+
+#leftside img {
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+#leftside div div {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.gif .gif-file {
+    display: none;
+}
+
+
+.gif img {
+    width: 1
+}
+
+#leftside div p {
+    margin: 1em;
+    font-size: 1em;
+    font-family: 'Karla', sans-serif;
+    line-height: 20px;
+    color: #333333;
+}
+
+#rightside h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#rightside ul {
+    padding: 0;
+}
+
+#rightside ul li {
+    list-style: none;
+    margin-bottom: 1em;
+
+}
+
+
+#aboutme,
+#contactinfo,
+#research,
+#skills {
+    margin-bottom: 1em;
+    border-bottom: 2px grey solid;
+    padding: 0;
+}
+
+#skills {
+    border-bottom: none;
+}
+
+#courselist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#courselist li {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 1em;
+    text-align: center;
+    padding: .5em 0em;
+    vertical-align: bottom;
+    width: 90%;
+    border: 1.4px solid #05386B;
+    margin: 0 auto;
+    font-size: .9em;
+    background: rgba(5, 56, 107, .09);
+
+}
+
+
+/* SKILL BAR PAGE ELEMENTS */
+
+
+
+#skills p b {
+    text-indent: 20%;
+}
+
+.skillBar {
+    background: #ffffff;
+    width: 100%;
+    height: 1em;
+    border-radius: 1em;
+    border-bottom: 2px grey solid;
+}
+
+#strong,
+.proficient,
+#beginner,
+#intermediate {
+    z-index: 2;
+    background: #3ab607;
+    height: 1em;
+    border-radius: 1em;
+}
+
+#strong {
+    width: 85%;
+}
+
+.proficient {
+    width: 70%;
+}
+
+#beginner {
+    width: 10%;
+}
+
+#intermediate {
+    width: 50%;
+}
+
+/* ----- MEDIA QUERIES -----*/
+
+@media screen and (min-width: 1300px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .wrapper {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        grid-template-columns: 3fr 2fr;
+    }
+
+
+    #leftside div {
+        width: 85%;
+    }
+
+
+}
+
+@media screen and (max-width: 1105px) {
+    .wrapper {
+        grid-template-columns: 5fr 4fr;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .wrapper {
+
+        display: block;
+    }
+
+
+    footer {
+        grid-template-columns: 2fr 1fr;
+    }
+}
