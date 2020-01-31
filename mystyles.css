@@ -29,7 +29,7 @@ h3 {
 /* ----- COMMON / UTILITY ELEMENTS----- */
 
 .wrapper {
-    max-width: 2550px;
+    max-width: 3050px;
     margin: 0 auto;
     width: 100%;
 
@@ -239,6 +239,7 @@ footer p:first-of-type {
     background: #3ab607;
     height: 1em;
     border-radius: 1em;
+    border-bottom: 1px #3ab607 solid;
 }
 
 #strong {
