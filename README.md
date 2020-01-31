@@ -1,2 +1,3 @@
 # mattmabrey1.github.io
-Portfolio Website for Matthew Mabrey
+Oops something must've went wrong. 
+Please email me at mattmabrey1@gmail.com if you're having trouble viewing my portforlio website
