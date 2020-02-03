@@ -165,6 +165,10 @@ footer p:first-of-type {
     color: #333333;
 }
 
+#leftside div a{
+    text-decoration: none;
+}
+
 #rightside h2 {
     margin: 0;
     padding: 0;
