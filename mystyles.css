@@ -114,6 +114,10 @@ footer p:first-of-type {
     line-height: 1.5em;
 }
 
+
+
+/* ------ LeftSide of Main ------*/
+
 #leftside {
     padding-top: 0;
     border-radius: 1em;
@@ -169,6 +173,18 @@ footer p:first-of-type {
     text-decoration: none;
     color: #333333;
 }
+#leftside .highlightedlink{
+    text-decoration: underline;
+    color: blue;
+}
+
+#leftside #nextpage{
+    text-align: center;
+    padding: .5em;
+    width: 10em;
+}   
+/* ------ RightSide of Main ------*/
+
 
 #rightside h2 {
     margin: 0;
