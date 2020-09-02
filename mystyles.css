@@ -1,6 +1,7 @@
 /* ----- EXTRACTED COLORS----- */
 /*https://www.colorcombos.com/combotester.html*/
 
+
 .colors {
     color: #05386b;
     color: #0000FF;
@@ -24,7 +25,6 @@ body {
 }
 
 
-
 /* ----- TYPOGRAPHY----- */
 
 h2 {
@@ -43,12 +43,6 @@ h3 {
 
 
 /* ----- COMMON / UTILITY ELEMENTS----- */
-
-.wrapper {
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 100%;
-}
 
 a {
     text-decoration: none;
@@ -70,28 +64,56 @@ a:hover {
 header {
     text-decoration: none;
     background-color: #1d4b79;
-    padding: 0;
+    font-family: 'Rokkitt', sans-serif;
+    color: #fafafa;
     margin: 0;
     text-align: center;
-    position: sticky;
-    position: -webkit-sticky;
+    width: 100%;
     top: 0;
-    z-index: 5;
+    padding: 1.5em 0em;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
-    padding: 1em;
-    font-family: 'Rokkitt', sans-serif;
+    font-size: 2.5em;
     font-weight: 300;
     letter-spacing: .1em;
-    color: #fafafa;
 }
 
 
+#navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+#navbar li{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+#navbar li a{
+    font-size: 1.5em;
+    padding: 0.1em 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.active, #navbar li a:hover{
+    background-color: #356ba1;
+     -webkit-transition: background-color 0.30s;
+    transition: background-color 0.30s;
+}
+
+#navbar #projects-nav {
+    display: none;
+}
 
 /* ----- FOOTER -----*/
+
 footer {
     background: #fafafa;
     padding-top: 10px;
@@ -100,15 +122,20 @@ footer {
     color: #05386B;
     font-size: .7em;
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer p {
-    font-size: 1em;
+    font-size: 1.25em;
+    margin: 1em auto;
+}
+
+footer p:last-of-type {
+    padding-left: 50%;
 }
 
 footer p:first-of-type {
-    padding-left: 10%;
+    padding-right: 50%;
 }
 
 
@@ -119,23 +146,51 @@ footer p:first-of-type {
 .wrapper {
     padding: 1em;
     display: grid;
-    grid-template-columns: 6fr 3.5fr;
+    grid-template-columns: 6fr 4fr;
     width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
     height: auto;
 
 }
 
-.wrapper section {
-    padding: 1em;
+.wrapper section, .projects-wrapper section, .profile-wrapper section, .game-design-wrapper section{
+    padding: 2em;
 }
 
 .wrapper p {
     line-height: 1.5em;
 }
 
+.projects-wrapper {
+    display: block;
+    max-width: 1450px;
+    padding: 1em;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
 
+.hidden{
+    opacity: 0%;
+    visibility: hidden;
+    -webkit-transition: opacity 1s,  visibility 2s;
+    transition: opacity 1s,  visibility 2s;
+    
+}
 
-/* ------ LeftSide of Main ------*/
+.visible{
+    opacity: 100%;
+    visibility: visible;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+
+.tools-used {
+    color: #356ba1;
+}
+/* ------ LeftSide of Index Main ------*/
 
 
 .imglink {
@@ -146,8 +201,6 @@ footer p:first-of-type {
 .imglink:after {
 
     color: rgba(5, 56, 107, 0.8);
-    border-top-left-radius: .5em;
-    border-top-right-radius: .5em;
     padding: 1em;
     position: absolute;
     top: 0;
@@ -164,13 +217,13 @@ footer p:first-of-type {
     text-shadow: 2px 2px 3px #000;
     background: rgba(0, 0, 0, 0.4);
     color: #fff;
-    border-top-left-radius: .5em;
-    border-top-right-radius: .5em;
+     -webkit-transition: visible 1s;
+    transition: visible 1s;
 }
 
-
-#leftside {
-    padding-top: 0;
+#leftside h2{
+    padding: 0;
+    margin: 0;
 }
 
 #leftside a {
@@ -183,41 +236,27 @@ footer p:first-of-type {
     width: 90%;
     height: auto;
     margin: 2em auto;
-    padding-bottom: .1em;
-    border-top-left-radius: .75em;
-    border-top-right-radius: .75em;
+    padding: 0;
+    display: inline-grid;
+}
+
+#leftside #index-project1{
+    margin-top: 1m;
+    padding-top: 0;
 }
 
 #leftside img {
     height: auto;
     width: 100%;
-    border-top-left-radius: .75em;
-    border-top-right-radius: .75em;
-}
-
-#leftside div div {
-    width: 100%;
-    padding: 0;
     margin: 0;
-
-}
-
-
-.gif .gif-file {
-    display: none;
-}
-
-
-.gif img {
-    width: 100%;
-    height: auto;
+    padding: 0;
 }
 
 #leftside div p {
     margin: 1em;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: 'Karla', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
     color: #333333;
 }
 
@@ -231,16 +270,271 @@ footer p:first-of-type {
     color: #005ebc;
 }
 
-#leftside #nextpage {
-    text-align: center;
-    padding: .5em;
-    width: 10em;
+#leftside div .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    margin: 0;
+    
 }
+
+#leftside div .video-container img {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#leftside div .video-container .play-button{
+    padding: 0;
+    height: inherit;
+    cursor: pointer;
+    width: 50%;
+    padding: 13.75% 25%;
+}
+
+#leftside div .video-container .play-button:hover{
+    fill: blue;
+}
+
+
+#leftside div .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------ Leftside of Projects Main ------*/
+
+#projects-leftside div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 4em auto;
+    width: 100%;
+    background: #ffffff;
+    height: auto;
+}
+
+#projects-leftside .wide-project{
+    display: block;
+}
+
+#projects-leftside .wide-project a {
+    width: 100%;
+}
+
+#projects-leftside .wide-project p {
+    padding: 2em;
+    margin: 0;
+}
+
+#projects-leftside .quad-project{
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+
+#projects-leftside .quad-project .quad-videos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;    
+}
+
+#projects-leftside .quad-project .quad-videos video {
+    width: 98%;
+    padding: 0;
+    margin: auto;
+    
+}
+
+#projects-leftside .quad-project .quad-videos #top-left {
+    margin: 0 auto auto 0;
+}
+
+#projects-leftside .quad-project .quad-videos #top-right {
+    margin: 0 0 auto auto;
+}
+
+#projects-leftside .quad-project .quad-videos #bottom-left {
+    margin: auto auto 0 0;
+}
+
+#projects-leftside .quad-project .quad-videos #bottom-right {
+    margin: auto 0 0 auto;
+}
+
+
+#projects-leftside div .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    margin: 0;
+    
+}
+
+
+#projects-leftside div .video-container img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: absolute;
+}
+
+#projects-leftside div .video-container .play-button{
+    padding: 0;
+    height: inherit;
+    width: 50%;
+    padding: 13.75% 25%;
+    cursor: pointer;
+}
+
+#projects-leftside div .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#projects-leftside img{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+#projects-leftside a{
+    margin: 0;
+    padding: 0;
+}
+
+#projects-leftside div p{
+    font-size: 1.25em;
+    line-height: 1.5em;
+    height: auto;
+    margin: auto 2em;
+    font-family: 'Karla', sans-serif;
+    color: #333333;
+}
+
+
+#projects-leftside h2 {
+    padding-top: 0;
+}
+
+#projects-leftside a {
+    text-decoration: underline;
+    color: #05386b;
+}
+
+
+#projects-leftside div p a {
+    text-decoration: none;
+    color: #333333;
+}
+
+/* ------ About Me Page ---------*/
+
+.profile-wrapper {
+    padding: 1em;
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.profile-wrapper div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: auto;
+    width: 80%;
+}
+
+.profile-wrapper h2 {
+    padding-top: 0;
+}
+    
+.profile-wrapper div img {
+    border-radius: 30em;
+    width: 80%;
+    margin: auto;
+}
+
+.profile-wrapper p {
+    background: white;
+    padding: 2em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+/* ------ Leftside Game Design of Main ------*/
+
+.game-design-wrapper{
+    display: block;
+    max-width: 1450px;
+    padding: 1em;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    
+}
+
+.game-design-wrapper section div {
+    width: 100%;
+    display: block;
+    background: white;
+    margin-bottom: 5em;
+}
+
+.game-design-wrapper section div img {
+    width: 100%;
+}
+
+.game-design-wrapper section div a{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.game-design-wrapper section div p{
+    margin: auto;
+    padding: 2em 0;
+    width: 85%;
+    font-size: 1.25em;
+}
+
 
 /* ------ RightSide of Main ------*/
 
 
-#rightside h2 {
+#rightside p{
+    font-size: 1.1em;
+}
+
+#rightside a{
+    font-size: 1.1em;
+}
+
+#rightside h2{
     margin: 0;
     padding: 0;
 }
@@ -254,7 +548,6 @@ footer p:first-of-type {
     margin-bottom: 1em;
 
 }
-
 
 #aboutme,
 #contactinfo,
@@ -290,8 +583,6 @@ footer p:first-of-type {
 
 /* SKILL BAR PAGE ELEMENTS */
 
-
-
 #skills p b {
     text-indent: 20%;
 }
@@ -300,8 +591,9 @@ footer p:first-of-type {
     background: #ffffff;
     width: 100%;
     height: 1em;
-    border-radius: 1em;
-    border-bottom: 2px grey solid;
+    border-radius: 0.35em;
+    border-bottom: .1em grey solid;
+    
 }
 
 #strong,
@@ -312,7 +604,7 @@ footer p:first-of-type {
     background: #ccced0;
     background-image: linear-gradient(to right, #DBDEE2, #005ebc);
     height: 1em;
-    border-radius: 1em;
+    border-radius: 0.35em;
 }
 
 #strong {
@@ -333,39 +625,68 @@ footer p:first-of-type {
 
 /* ----- MEDIA QUERIES -----*/
 
-@media screen and (min-width: 1300px) {
-    .wrapper {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1500px) {
+    
     .wrapper {
         width: 100%;
         padding: 0;
         margin: 0;
         grid-template-columns: 3fr 2fr;
     }
+    
+    .projects-wrapper, .game-design-wrapper, .profile-wrapper{
+        padding: 0;
+        margin: 0;
+    }
+    
+    #projects-leftside div p{
+        font-size: 1.1em;
+        height: auto;
+        margin: auto 2em;
+    }
 
     #leftside div {
-        width: 85%;
+        width: 100%;
     }
 
 }
 
 @media screen and (max-width: 1105px) {
+    
     .wrapper {
         grid-template-columns: 5fr 4fr;
+    }
+    
+    #navbar a {
+        text-align: center;
+    }
+    
+    #navbar #projects-nav {
+        display:block;
+    }
+
+    #navbar #projects-experience-nav{
+        display: none;
+    }
+    
+    
+     #projects-leftside div p{
+        font-size: .95em;
+        line-height: 1.35em;
+        margin: auto 2em;
     }
 }
 
 @media screen and (max-width: 980px) {
+    
     .wrapper {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
     }
     
-    footer {
-        grid-template-columns: 3fr 1fr;
+    #projects-leftside div p{
+        font-size: .85em;
+        line-height: 1.35em;
+        margin: auto 2em;
     }
     
     
@@ -376,15 +697,123 @@ footer p:first-of-type {
     .wrapper {
         display: block;
     }
+    
+    .projects-wrapper{
+        padding: 0;
+    }
+    
+    
+    .projects-wrapper #projects-leftside div{
+        display: block;
+    }
+    
+    .projects-wrapper #projects-leftside .wide-project p{
+        padding: 1em;
+    }
+    
+    .projects-wrapper #projects-leftside .video-container{
+        display: grid;
+    }
+    
+    .projects-wrapper #projects-leftside .quad-project .quad-videos video{
+        margin: 1em;
+    }
+    
+    #projects-leftside .quad-project .quad-videos video {
+        width: 90%;
+        padding: 0;
+        margin: auto;
 
+    }
+
+    #projects-leftside .quad-project .quad-videos #top-left {
+        margin: 1em auto 0.5em;
+    }
+
+    #projects-leftside .quad-project .quad-videos #top-right {
+        margin: 1em auto 0.5em;
+    }
+
+    #projects-leftside .quad-project .quad-videos #bottom-left {
+        margin: 0.5em auto 0;
+    }
+
+    #projects-leftside .quad-project .quad-videos #bottom-right {
+        margin: 0.5em auto 0;
+    }
+
+    .profile-wrapper div{
+        display: block;
+    }
+    
+    .profile-wrapper div img {
+        margin: 2em auto;
+        display: block;
+    }
+    
+    #projects-leftside div p{
+        margin: 0;
+        padding: 1em;
+        font-size: 1em;
+    }
+    
+    
     footer {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
     }
-
+    
+    footer p:first-of-type{
+        padding: 0;
+        padding-right: 25%;
+    }
+    
+    footer p:last-of-type{
+        padding-left: 0;
+    }
+    
     header h1 {
-        font-size: 1.4em;
+        font-size: 1.8em;
+    }
+    
+    #navbar{
+        font-size: .8em;
+        height: auto;
+    }
+         
+    #navbar #projects-nav {
+        display:block;
     }
 
+    #navbar #projects-experience-nav{
+        display: none;
+    }
+    
+    
+    #navbar li {
+        margin: auto;
+    }
+
+    #navbar a {
+        text-align: center;
+        display:block;
+    }
+    
     #leftside div {
         width: 100%;
     }
+    
+    #leftside, #leftside div:last-child
+    {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    #contactinfo
+    {
+        padding-top: 1em;
+        border-top: 2px grey solid;
+    }
+}
+
+
+

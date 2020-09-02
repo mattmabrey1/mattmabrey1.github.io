@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Mabrey | Computer Scientist</title>
+    <title>Matthew Mabrey</title>
     <link rel="stylesheet" type="text/css" href="mystyles.css">
     <link href="https://fonts.googleapis.com/css?family=Karla%7CMontserrat%7CRokkitt:300&display=swap" rel="stylesheet">
 </head>
@@ -12,43 +12,59 @@
 <body>
     <header>
         <h1>MATTHEW MABREY</h1>
+
+        <ul id="navbar">
+            <li><a id="overview" href="index.html">Overview</a></li>
+            <li><a id="aboutMe" href="AboutMe.html">About Me</a></li>
+            <li><a id="projects-experience-nav" href="Projects.html">Projects &amp; Experience</a><a id="projects-nav" href="Projects.html">Projects</a></li>
+            <li><a id="gameDesign" href="GameDesign.html">Game Design</a></li>
+        </ul>
     </header>
 
     <main class="wrapper">
         <section id="leftside">
             <h2>Latest Projects</h2>
-            <div>
-                <a href="https://youtu.be/RGAA8x2q9C0" target="_blank" class="imglink" id="imglink1"><img src="demolition-sample.png" alt="project1" id="project1" width="700"></a>
-                <p><strong>Demolition Derby Game </strong>- Independent project where each player controls a car with one randomly getting assigned a transferrable bomb with a time limit and the goal of the game is to be the last car standing. Over the course of this project I learned how to implement multiplayer using a networking framework and gained experience using Remote Procedure Calls [RPCS], Events, and Object Synchronization across multiple clients. In the future I plan on adding deformable meshes on collisions and AI players. <a href="https://youtu.be/RGAA8x2q9C0" target="_blank" class="highlightedlink">Click here for gameplay</a> - <em>[C#, Unity Engine, Blender, Photon Networking Framework]</em></p>
-            </div>
-            <div>
-                <a href="https://github.com/mattmabrey1/-Would-You-Rather...-Website" target="_blank" class="imglink" id="imglink2"><img src="website-sample.png" alt="project2" id="project2" width="700"></a>
-                <p><a href="https://github.com/mattmabrey1/-Would-You-Rather...-Website" target="_blank"><strong>"Would You Rather...?" Website </strong></a>- Final project for "Fundamentals of Web Design" course at TCNJ during the Fall 2019 semester. The website allows the user to play a game of would you rather, submit questions of their own, sort questions, and like/dislike/comment on questions. <a href="https://owd.tcnj.edu/~mabreym1/version-12-06-2019/index.html" target="_blank" class="highlightedlink">Click here to visit the website </a>-<em>[HTML, CSS, Javascript/JQuery, Brackets]</em></p>
-            </div>
-            <div>
-                <div class="gif">
-                    <a href="https://github.com/mattmabrey1/Hunter-Fox-and-Rabbit-Population-Simulation" target="_blank" class="imglink" id="imglink3"><img src="simulation-sample.png" alt="project3" class="preset-file" width="700"><img src="oop-simulation.gif" alt="project3gif" id="project3" class="gif-file"></a>
+            <div class="index-projects" id="index-project1">
+                <div class="video-container">
+                    <img src="game-agent-sample.PNG" alt="project1-sample" id="video1-sample" width="700">
+                    <img src="play-button.png" alt="project1-play-button" id="video1-button" class="play-button" width="700">
+                    <iframe id="video1" width="800" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <p><a href="https://github.com/mattmabrey1/Hunter-Fox-and-Rabbit-Population-Simulation" target="_blank"><strong>Hunter, Fox and Rabbit Population Simulation </strong></a>- Final project for "Objected-oriented Programming &amp; Data Abstraction" course at Rowan College at Burlington County during the Spring 2019 semester. The program simulates the population of hunters, foxes, and rabbits in a 120x80 grid. Each "actor" in the simulation has specific actions such as moving, killing, eating, reproducing, and dying. -<em>[Java, BlueJ Object-Oriented Programming IDE]</em></p>
+                <p><a href="https://github.com/mattmabrey1/AI-Game-Solving-Agent" target="_blank"><strong>Game Solving Agent</strong></a> - Final project for "Artificial Intelligence" course at TCNJ during the Spring 2020 semester. Researched and tested several artificial intelligence techniques to design a rational game solving agent that could successfully complete all 10 stages of the arcade game by avoiding obstacles and adversaries, while also attempting to maximize it's score through the collection of fruits and bonus targets. <em class="tools-used">- [Python, Python Packages: Numpy, Pygame, Python Arcade Library]</em></p>
             </div>
-            <div>
-                <a href="https://github.com/mattmabrey1/Hangman-Game" target="_blank" class="imglink" id="imglink4"><img src="hangman-sample.png" alt="project4" id="project4" width="700"></a>
-                <p><a href="https://github.com/mattmabrey1/Hangman-Game" target="_blank"><strong>Hangman Game </strong></a>- Final project for "Machine and Assembly Language Programming" course at Rowan College at Burlington County during the Spring 2019 semester. The program allows the user to play a game of hangman, keeping track of the word to solve, previously guessed letters, and the body parts of the hangman. - <em> [Assembly Language, Microsoft Macro Assembler(MASM)]</em></p>
+            <div class="index-projects" id="index-project2">
+                <div class="video-container">
+                    <img src="demolition-sample.png" alt="project2-sample" id="video2-sample" width="700">
+                    <img src="play-button.png" alt="project2-play-button" id="video2-button" class="play-button" width="700">
+                    <iframe id="video2" width="800" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p><a href="https://github.com/mattmabrey1/Demolition-Derby-Game" target="_blank"><strong>Demolition Derby Video Game</strong></a> - Independent project where each player controls a car with one randomly getting assigned a transferrable bomb with a time limit and the goal of the game is to be the last car standing. Over the course of this project I learned how to implement multiplayer using a networking framework and gained experience using Remote Procedure Calls [RPCS], Events, and Object Synchronization across multiple clients. In the future I plan on adding deformable meshes on collisions and AI players. <em class="tools-used">- [C#, Unity Engine, Blender, Photon Networking Framework]</em></p>
+            </div>
+            <div class="index-projects" id="index-project3">
+                <div class="video-container">
+                    <img src="gameplay-sample.png" alt="project3-sample" id="video3-sample" width="700">
+                    <img src="play-button.png" alt="project3-play-button" id="video3-button" class="play-button" width="700">
+                    <iframe id="video3" width="800" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p><strong>9 Circles Video Game Demo</strong> - Term project for <em>Games II</em> course at TCNJ during the Spring 2020 semester. Worked on a small team to create a roguelike video game centered on a paladin traversing the nine circles of hell to defeat Satan. Responsibilities included all programming, user interface, item and ability design, and spell effects. Over the course of the project I learned a lot about game design and subjects like procedural animation, shaders and particle systems, and AI navigation through navigation meshes. <em class="tools-used">- [C#, Unity Engine, Blender]</em></p>
+            </div>
+            <div class="index-projects" id="index-project4">
+                <a href="https://github.com/mattmabrey1/Kalman-Filter" target="_blank" class="imglink" id="imglink4"><img src="kalman-filter-sample.png" alt="project4" id="project4" width="800"></a>
+                <p><a href="https://github.com/mattmabrey1/Kalman-Filter" target="_blank"><strong>Kalman Filter Extra Credit</strong></a> - Extra credit project for "Artificial Intelligence" course at TCNJ during the Spring 2020 semester. The program uses Kalman filtering, a common technique used for object tracking, to predict the actual water level of a water tank over time from noisy and inaccurate observations. Three scenarios are assessed, a water tank with a constant water level, a water tank that's filling with water at a constant rate, and a sloshing water tank where the water is sloshing back and forth in a sin wave function <em class="tools-used">- [Python, Python Packages: Numpy, Matlibplot]</em></p>
             </div>
 
-            <!--<div id="nextpage">Next Page  </div> -->
         </section>
         <section id="rightside">
             <section id="contactinfo">
                 <h2>Contact Information</h2>
                 <ul>
-                    <li><strong>Resume</strong> <br>> <a href="matthew-mabrey-resume-2020.pdf" target="_blank" download>matthew-mabrey-resume-2020.pdf</a>
+                    <li><strong>Resume</strong> <br>> <a href="matthew-mabrey-resume-2020.pdf" target="_blank">matthew-mabrey-resume-2020.pdf</a>
                     </li>
                     <li><strong>Email</strong> <br>> <a href="mailto:mattmabrey1@gmail.com">mattmabrey1@gmail.com</a>
                     </li>
                     <li><strong>Github<br> </strong>> <a href="https://github.com/mattmabrey1" target="_blank">https://github.com/mattmabrey1</a>
                     </li>
-                    <li><strong>LinkedIn</strong> <br>> <a href="https://www.linkedin.com/in/matthewmabrey" target="_blank">https://www.linkedin.com/in/matthewmabrey</a></li>
+                    <li><strong>LinkedIn</strong> <br>> <a href="https://www.linkedin.com/in/matthewmabrey" t/arget="_blank">https://www.linkedin.com/in/matthewmabrey</a></li>
                 </ul>
             </section>
 
@@ -60,6 +76,8 @@
                 <ul id="courselist">
                     <li>Accelerated Computer Science I &amp; II</li>
                     <li>Calculus II &amp; Analytic Geometry</li>
+                    <li>Operating <br>Systems</li>
+                    <li>Computer <br>Networking</li>
                     <li>Computer<br> Architecture</li>
                     <li>Discrete Structures <br> &amp; Mathematics</li>
                     <li>Analysis of <br>Algorithms</li>
@@ -75,18 +93,18 @@
                 <h2>Research </h2>
                 <p> <strong>Device Security</strong> - <em>Comp. Sci. Undergraduate Research<br> Rowan College at Burlington County - Fall 2018</em>
                 </p>
-                <p> Worked with a group of fellow Computer Science <br> students to research consumer device security. My <br>section focused on comparing the malware and <br>virus vulnerabilties of popular mobile device<br> operating systems aswell as assessing the <br>security options currently available to <br>consumers. <br><br><strong>Research Paper: </strong>
+                <p> Worked with a group of fellow Computer Science students to research consumer device security. My section focused on comparing the malware and virus vulnerabilties of popular mobile device operating systems aswell as assessing the security options currently available to consumers. <br><br><strong>Research Paper: </strong>
                     <a href="device-security-research.pdf" target="_blank">device-security-research.pdf</a></p>
             </section>
 
             <section id="skills">
                 <h2>Skills</h2>
                 <h3>Languages</h3>
-                <p>Strong with C++, C#, and Java </p>
+                <p>Strong with C, C#, C++, and Java </p>
                 <div class="skillBar">
                     <div id="strong"></div>
                 </div>
-                <p>Proficient with Python, C, HTML, CSS, and Javascript</p>
+                <p>Proficient with Python, HTML, CSS, and Javascript</p>
                 <div class="skillBar">
                     <div class="proficient"></div>
                 </div>
@@ -118,29 +136,78 @@
     <script>
         $(document).ready(function() {
 
-            var projectsArray = ["#project1", "#project2", "#project3", "#project4"];
-            var imglinksArray = ["#imglink1", "#imglink2", "#imglink3", "#imglink4"];
-            var i = 0;
-            
-            $("div", "#leftside").each(function(){
-                
-                $(imglinksArray[i]).height($(projectsArray[i]).height());
-                i = i + 1;
-            });
-            
-            $(window).resize(function(){
-                    i = 0;
-                    $("div", "#leftside").each(function(){
 
-                    $(imglinksArray[i]).height($(projectsArray[i]).height());
+            // Video Playing and IFrame Loading on play button click
+            var video1 = $("#video1");
+            var video2 = $("#video2");
+            var video3 = $("#video3");
+
+            var video1URL = "https://www.youtube.com/embed/r8z812sCfQc?autoplay=1";
+            var video2URL = "https://www.youtube-nocookie.com/embed/RGAA8x2q9C0?autoplay=1";
+            var video3URL = "https://www.youtube.com/embed/3KoSr7Jm_Zc?autoplay=1";
+
+            video1.css("opacity", "0");
+            video1.css("visibility", "hidden");
+
+            video2.css("opacity", "0");
+            video2.css("visibility", "hidden");
+
+            video3.css("opacity", "0");
+            video3.css("visibility", "hidden");
+
+            $("#video1-button").click(function() {
+                video1.addClass("visible");
+                video1.css("opacity", "100");
+                video1.css("visibility", "visible");
+                video1.attr('src', video1URL);
+
+                $(this).addClass("hidden");
+                $("#video1-sample").addClass("hidden");
+            });
+
+            $("#video2-button").click(function() {
+                video2.addClass("visible");
+                video2.css("opacity", "100");
+                video2.css("visibility", "visible");
+                video2.attr('src', video2URL);
+
+                $(this).addClass("hidden");
+                $("#video2-sample").addClass("hidden");
+            });
+
+            $("#video3-button").click(function() {
+                video3.addClass("visible");
+                video3.css("opacity", "100");
+                video3.css("visibility", "visible");
+                video3.attr('src', video3URL);
+
+                $(this).addClass("hidden");
+                $("#video3-sample").addClass("hidden");
+            });
+
+
+            // Project Image Links On Hover Resizing
+
+
+            $("#overview").addClass("active");
+
+
+            $("#project4").on('load', function() {
+                $("#imglink4").height($("#project4").height());
+            });
+
+            var i = 0;
+
+            $(window).resize(function() {
+                i = 0;
+                $("div", "#leftside").each(function() {
+
+                    $("#imglink4").height($("#project4").height());
                     i = i + 1;
                 });
             });
-            
-            $("img", ".gif").hover(function() {
-                $('.preset-file').toggle();
-                $('.gif-file').toggle();
-            });
+
+
         });
 
     </script>

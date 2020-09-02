@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Mabrey | Computer Scientist</title>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla%7CMontserrat%7CRokkitt:300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>MATTHEW MABREY</h1>
+        
+        <ul id="navbar">
+            <li><a id="overview" href="index.html">Overview</a></li>
+            <li><a id="aboutMe" href="AboutMe.html">About Me</a></li>
+            <li><a id="projects-experience-nav" href="Projects.html">Projects &amp; Experience</a><a id="projects-nav" href="Projects.html">Projects</a></li>
+            <li><a id="gameDesign" href="GameDesign.html">Game Design</a></li>
+        </ul>
+    </header>
+
+    <main class="profile-wrapper">
+        <section>
+            <h2>About Me</h2>
+
+            <div>
+                <img src="matt-picture.jpg" alt="profile-pic" width="700">
+                <p> I'm currently a senior at The College of New Jersey studying Computer Science and I'm interesting in finding an internship or research position this year. I really enjoy the teamwork and problem solving involved in software development so I'm excited to develop my real world skills as a software engineer and work on a team of like-minded creative engineers. I'm also interested in using the experiences of an internship to help me narrow down what aspect of computer science I'd like to pursue further (such as Artificial Intelligence, Machine Learning, Cyber-security, Computer Vision, Human-Computer interaction, Computer Graphics, etc).
+                </p>
+            </div>
+        
+        </section>
+       
+    </main>
+
+    <footer>
+        <p>&#9400; 2020 <strong>Matthew Mabrey</strong></p>
+        <p><a href="mailto:mattmabrey1@gmail.com">Email</a> //
+            <a href="https://github.com/mattmabrey1" target="_blank">Github</a> // <a href="https://www.linkedin.com/in/matthewmabrey" target="_blank">LinkedIn</a> </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            var projectsArray = ["#project1", "#project2", "#project3", "#project4"];
+            var imglinksArray = ["#imglink1", "#imglink2", "#imglink3", "#imglink4"];
+            
+            $("#aboutMe").addClass("active");
+            
+            var i = 0;
+            
+            $("div", "#leftside").each(function(){
+                
+                $(imglinksArray[i]).height($(projectsArray[i]).height());
+                i = i + 1;
+            });
+            
+            
+            
+            
+            
+            $(window).resize(function(){
+                    i = 0;
+                    $("div", "#leftside").each(function(){
+
+                    $(imglinksArray[i]).height($(projectsArray[i]).height());
+                    i = i + 1;
+                });
+            });
+            
+            
+            $("img", ".gif").hover(function() {
+                $('.preset-file').toggle();
+                $('.gif-file').toggle();
+            });
+        });
+
+    </script>
+</body>
+
+</html>
