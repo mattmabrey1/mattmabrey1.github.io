@@ -112,6 +112,7 @@ header h1 {
     display: none;
 }
 
+
 /* ----- FOOTER -----*/
 
 footer {
@@ -872,8 +873,17 @@ footer p:first-of-type {
     font-size: 80%;
     }
     
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+    footer p {
+        font-size: 1.15em;
+    }
+    
     footer p:first-of-type{
-        padding-right: 35%;
+        padding-right: 15%;
     }
     
     footer p:last-of-type{

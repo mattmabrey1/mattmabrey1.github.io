@@ -153,6 +153,7 @@
             video3.css("opacity", "0");
             video3.css("visibility", "hidden");
 
+            // On play button click, load the video and hide play button and sample image
             $("#video1-button").click(function() {
                 video1.addClass("visible");
                 video1.css("opacity", "100");
@@ -183,20 +184,19 @@
                 $("#video3-sample").addClass("hidden");
             });
 
-
-            // Project Image Links On Hover Resizing
-
-
             $("#overview").addClass("active");
-
-
+            
+            // Project Image Links On Hover Resizing
+            
+            // Set "Link ->" image link height to be equal to the image behind it
             $("#project4").on('load', function() {
                 $("#imglink4").height($("#project4").height());
             });
 
             
             var i = 0;
-
+            
+            // Resize the "Link ->" image link whenever the window is resized
             $(window).resize(function() {
                 i = 0;
                 $("div", "#leftside").each(function() {
