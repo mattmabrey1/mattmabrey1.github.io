@@ -26,7 +26,7 @@
             <h2>About Me</h2>
 
             <div>
-                <img src="matt-picture.jpg" alt="profile-pic" width="700">
+                <img src="matt-picture.JPG" alt="profile-pic" width="700">
                 <p> I'm currently a senior at The College of New Jersey studying Computer Science and I'm interesting in finding an internship or research position this year. I really enjoy the teamwork and problem solving involved in software development so I'm excited to develop my real world skills as a software engineer and work on a team of like-minded creative engineers. I'm also interested in using the experiences of an internship to help me narrow down what aspect of computer science I'd like to pursue further (such as Artificial Intelligence, Machine Learning, Cyber-security, Computer Vision, Human-Computer interaction, Computer Graphics, etc).
                 </p>
             </div>
@@ -45,8 +45,8 @@
     <script>
         $(document).ready(function() {
 
-            var projectsArray = ["#project1", "#project2", "#project3", "#project4"];
-            var imglinksArray = ["#imglink1", "#imglink2", "#imglink3", "#imglink4"];
+            var projectsArray = ["#project1"];
+            var imglinksArray = ["#imglink1"];
             
             $("#aboutMe").addClass("active");
             
@@ -60,8 +60,6 @@
             
             
             
-            
-            
             $(window).resize(function(){
                     i = 0;
                     $("div", "#leftside").each(function(){
@@ -70,12 +68,7 @@
                     i = i + 1;
                 });
             });
-            
-            
-            $("img", ".gif").hover(function() {
-                $('.preset-file').toggle();
-                $('.gif-file').toggle();
-            });
+        
         });
 
     </script>
