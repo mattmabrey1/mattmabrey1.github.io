@@ -15,13 +15,15 @@
 }
 
 
-html,
 body {
     background-color: #eeeeee;
-    margin: 0 auto;
+    margin: 0;
+    min-height: 100vh;
     padding: 0;
     font-family: 'Karla', sans-serif;
     font-size: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 
@@ -51,14 +53,9 @@ a {
     transition: color 0.30s;
 }
 
-
 a:hover {
     color: #005ebc;
 }
-
-
-
-
 
 /* ----- HEADER and NAV -----*/
 header {
@@ -81,35 +78,32 @@ header h1 {
 }
 
 
-#navbar{
+#navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     margin-top: 1.5em;
     margin-bottom: 0;
 }
 
-#navbar li{
+#navbar li {
     text-decoration: none;
     list-style: none;
-    
+
 }
 
-#navbar li a{
+#navbar li a {
     font-size: 1.5em;
     padding: 0.1em 0.5em;
     text-decoration: none;
     color: white;
 }
 
-.active, #navbar li a:hover{
+.active,
+#navbar li a:hover {
     background-color: #356ba1;
-     -webkit-transition: background-color 0.30s;
+    -webkit-transition: background-color 0.30s;
     transition: background-color 0.30s;
-}
-
-#navbar #projects-nav {
-    display: none;
 }
 
 
@@ -123,6 +117,7 @@ footer {
     color: #05386B;
     font-size: .7em;
     display: grid;
+    bottom: 0;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -149,13 +144,16 @@ footer p:first-of-type {
     display: grid;
     grid-template-columns: 6fr 4fr;
     width: 100%;
-    max-width: 1450px;
+    max-width: 1550px;
     margin: 0 auto;
     height: auto;
 
 }
 
-.wrapper section, .projects-wrapper section, .profile-wrapper section, .game-design-wrapper section{
+.wrapper section,
+.projects-wrapper section,
+.profile-wrapper section,
+.game-design-wrapper section {
     padding: 2em;
 }
 
@@ -172,15 +170,15 @@ footer p:first-of-type {
     height: auto;
 }
 
-.hidden{
+.hidden {
     opacity: 0%;
     visibility: hidden;
-    -webkit-transition: opacity 1s,  visibility 2s;
-    transition: opacity 1s,  visibility 2s;
-    
+    -webkit-transition: opacity 1s, visibility 2s;
+    transition: opacity 1s, visibility 2s;
+
 }
 
-.visible{
+.visible {
     opacity: 100%;
     visibility: visible;
     -webkit-transition: opacity 1s;
@@ -191,6 +189,7 @@ footer p:first-of-type {
 .tools-used {
     color: #356ba1;
 }
+
 /* ------ LeftSide of Index Main ------*/
 
 
@@ -218,11 +217,11 @@ footer p:first-of-type {
     text-shadow: 2px 2px 3px #000;
     background: rgba(0, 0, 0, 0.4);
     color: #fff;
-     -webkit-transition: visible 1s;
+    -webkit-transition: visible 1s;
     transition: visible 1s;
 }
 
-#leftside h2{
+#leftside h2 {
     padding: 0;
     margin: 0;
 }
@@ -236,12 +235,17 @@ footer p:first-of-type {
     background: #ffffff;
     width: 90%;
     height: auto;
-    margin: 2em auto;
-    padding: 0;
+    margin: 1em auto;
     display: inline-grid;
 }
 
-#leftside #index-project1{
+#leftside div div {
+    width: auto;
+    margin: 0.5em;
+    height: auto;
+}
+
+#leftside #index-project1 {
     margin-top: 1m;
     padding-top: 0;
 }
@@ -254,10 +258,10 @@ footer p:first-of-type {
 }
 
 #leftside div p {
-    margin: 1em;
-    font-size: 1.1em;
+    margin: 0.5em 1em;
+    font-size: 1.3em;
     font-family: 'Karla', sans-serif;
-    line-height: 25px;
+    line-height: 30px;
     color: #333333;
 }
 
@@ -277,7 +281,7 @@ footer p:first-of-type {
     width: 100%;
     padding-top: 56.25%;
     margin: 0;
-    
+
 }
 
 #leftside div .video-container img {
@@ -289,7 +293,7 @@ footer p:first-of-type {
     position: absolute;
 }
 
-#leftside div .video-container .play-button{
+#leftside div .video-container .play-button {
     padding: 0;
     height: inherit;
     cursor: pointer;
@@ -297,7 +301,7 @@ footer p:first-of-type {
     padding: 13.75% 25%;
 }
 
-#leftside div .video-container .play-button:hover{
+#leftside div .video-container .play-button:hover {
     fill: blue;
 }
 
@@ -314,7 +318,7 @@ footer p:first-of-type {
 
 /* ------ Leftside of Projects Main ------*/
 
-#projects-leftside div{
+#projects-leftside div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0;
@@ -324,7 +328,7 @@ footer p:first-of-type {
     height: auto;
 }
 
-#projects-leftside .wide-project{
+#projects-leftside .wide-project {
     display: block;
 }
 
@@ -337,7 +341,7 @@ footer p:first-of-type {
     margin: 0;
 }
 
-#projects-leftside .quad-project{
+#projects-leftside .quad-project {
     grid-template-rows: 1fr 1fr;
     height: auto;
     padding: 0;
@@ -351,14 +355,14 @@ footer p:first-of-type {
     margin: 0;
     padding: 0;
     grid-template-columns: 1fr 1fr;
-    width: 100%;    
+    width: 100%;
 }
 
 #projects-leftside .quad-project .quad-videos video {
     width: 98%;
     padding: 0;
     margin: auto;
-    
+
 }
 
 #projects-leftside .quad-project .quad-videos #top-left {
@@ -384,11 +388,11 @@ footer p:first-of-type {
     width: 100%;
     padding-top: 56.25%;
     margin: 0;
-    
+
 }
 
 
-#projects-leftside div .video-container img{
+#projects-leftside div .video-container img {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -396,7 +400,7 @@ footer p:first-of-type {
     position: absolute;
 }
 
-#projects-leftside div .video-container .play-button{
+#projects-leftside div .video-container .play-button {
     padding: 0;
     height: inherit;
     width: 50%;
@@ -412,22 +416,22 @@ footer p:first-of-type {
     right: 0;
     width: 100%;
     height: 100%;
-    
+
 }
 
-#projects-leftside img{
+#projects-leftside img {
     margin: 0;
     padding: 0;
     height: auto;
     width: 100%;
 }
 
-#projects-leftside a{
+#projects-leftside a {
     margin: 0;
     padding: 0;
 }
 
-#projects-leftside div p{
+#projects-leftside div p {
     font-size: 1.25em;
     line-height: 1.5em;
     height: auto;
@@ -462,7 +466,7 @@ footer p:first-of-type {
     height: auto;
 }
 
-.profile-wrapper div{
+.profile-wrapper div {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: auto;
@@ -472,7 +476,7 @@ footer p:first-of-type {
 .profile-wrapper h2 {
     padding-top: 0;
 }
-    
+
 .profile-wrapper div img {
     border-radius: 30em;
     width: 60%;
@@ -495,14 +499,14 @@ footer p:first-of-type {
 
 /* ------ Leftside Game Design of Main ------*/
 
-.game-design-wrapper{
+.game-design-wrapper {
     display: block;
     max-width: 1450px;
     padding: 1em;
     margin: 0 auto;
     width: 100%;
     height: auto;
-    
+
 }
 
 .game-design-wrapper section div {
@@ -516,13 +520,13 @@ footer p:first-of-type {
     width: 100%;
 }
 
-.game-design-wrapper section div a{
+.game-design-wrapper section div a {
     width: 100%;
     margin: 0 auto;
     display: block;
 }
 
-.game-design-wrapper section div p{
+.game-design-wrapper section div p {
     margin: auto;
     padding: 2em 0;
     width: 85%;
@@ -533,48 +537,62 @@ footer p:first-of-type {
 /* ------ RightSide of Main ------*/
 
 
-#rightside p{
+#rightside p {
+    font-size: 1.3em;
+}
+
+#rightside a {
     font-size: 1.1em;
 }
 
-#rightside a{
-    font-size: 1.1em;
-}
-
-#rightside h2{
+#rightside h2 {
     margin: 0;
     padding: 0;
 }
 
+#rightside #experience #experience-divs {
+    margin: 1em 0;
+}
 
-#rightside #research .research-title{
-    margin-top: .5em;
-    margin: .5em 0 0;
+#rightside #experience .experience-div {
+    margin-bottom: 1em;
+}
+
+#rightside #experience .experience-title {
+    margin: 0;
     font-size: 1.3em;
 }
 
-#rightside #research .research-school{
+#rightside #experience .experience-date {
     margin: 0;
-    font-size: 1.2em;
+    padding: 0;
+    font-size: 1.3em;
 }
 
-#rightside #research p {
+#rightside #experience .experience-description {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+#rightside #experience p {
     margin-top: 0.5em;
 }
 
 #rightside ul {
     padding: 0;
+    font-size: 1.1em;
 }
 
 #rightside ul li {
     list-style: none;
     margin-bottom: 1em;
-
+    font-size: 1.1em;
 }
 
 #aboutme,
 #contactinfo,
-#research,
+#experience,
 #skills {
     margin-bottom: 1em;
     border-bottom: 2px grey solid;
@@ -588,7 +606,7 @@ footer p:first-of-type {
 #courselist {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
 }
 
 
@@ -618,7 +636,7 @@ footer p:first-of-type {
     background: #ffffff;
     border-radius: 0.35em;
     border-bottom: .1em grey solid;
-    
+
 }
 
 
@@ -655,20 +673,22 @@ footer p:first-of-type {
 /* ----- MEDIA QUERIES -----*/
 
 @media screen and (max-width: 1500px) {
-    
+
     .wrapper {
         width: 100%;
         padding: 0;
         margin: 0;
         grid-template-columns: 3fr 2fr;
     }
-    
-    .projects-wrapper, .game-design-wrapper, .profile-wrapper{
+
+    .projects-wrapper,
+    .game-design-wrapper,
+    .profile-wrapper {
         padding: 0;
         margin: 0;
     }
-    
-    #projects-leftside div p{
+
+    #projects-leftside div p {
         font-size: 1.1em;
         height: auto;
         margin: auto 2em;
@@ -681,31 +701,26 @@ footer p:first-of-type {
 }
 
 @media screen and (max-width: 1205px) {
-    
+
     html,
     body {
-    font-size: 97%;
+        font-size: 97%;
     }
-    
+
     .wrapper {
         grid-template-columns: 5fr 4fr;
     }
-    
+
     #navbar a {
         text-align: center;
     }
-    
+
     #navbar #projects-nav {
-        display:block;
+        display: block;
     }
 
-    #navbar #projects-experience-nav{
-        display: none;
-    }
-    
-    
-     #projects-leftside div p{
-       
+    #projects-leftside div p {
+
         line-height: 1.35em;
         margin: auto 2em;
     }
@@ -713,51 +728,50 @@ footer p:first-of-type {
 
 
 @media screen and (max-width: 1000px) {
-    
+
     html,
     body {
-    font-size: 90%;
+        font-size: 90%;
     }
-    
+
     .wrapper {
         grid-template-columns: 1.2fr 1fr;
     }
-    
-    #projects-leftside div p{
+
+    #projects-leftside div p {
         line-height: 1.35em;
         margin: auto 2em;
     }
-    
-    
+
+
 }
 
 @media screen and (max-width: 850px) {
-    
+
     .wrapper {
         display: block;
     }
-    
-    .projects-wrapper{
+
+    .projects-wrapper {
         padding: 0;
     }
-    
-    
-    .projects-wrapper #projects-leftside div{
+
+    .projects-wrapper #projects-leftside div {
         display: block;
     }
-    
-    .projects-wrapper #projects-leftside .wide-project p{
+
+    .projects-wrapper #projects-leftside .wide-project p {
         padding: 1em;
     }
-    
-    .projects-wrapper #projects-leftside .video-container{
+
+    .projects-wrapper #projects-leftside .video-container {
         display: grid;
     }
-    
-    .projects-wrapper #projects-leftside .quad-project .quad-videos video{
+
+    .projects-wrapper #projects-leftside .quad-project .quad-videos video {
         margin: 1em;
     }
-    
+
     #projects-leftside .quad-project .quad-videos video {
         width: 90%;
         padding: 0;
@@ -781,74 +795,72 @@ footer p:first-of-type {
         margin: 0.5em auto 0;
     }
 
-    .profile-wrapper div{
+    .profile-wrapper div {
         display: block;
     }
-    
+
     .profile-wrapper div img {
         margin: 2em auto;
         display: block;
     }
-    
-    #projects-leftside div p{
+
+    #projects-leftside div p {
         margin: 0;
         padding: 1em;
         font-size: 1em;
     }
-    
-    
+
     footer {
         grid-template-columns: 1.5fr 1fr;
     }
-    
-    footer p:first-of-type{
+
+    footer p:first-of-type {
         padding: 0;
         padding-right: 40%;
     }
-    
-    footer p:last-of-type{
+
+    footer p:last-of-type {
         padding-left: 0;
     }
-    
+
     header h1 {
         font-size: 1.8em;
     }
-    
-    #navbar{
+
+    #navbar {
         font-size: .8em;
         height: auto;
     }
-         
+
     #navbar #projects-nav {
-        display:block;
+        display: block;
     }
 
-    #navbar #projects-experience-nav{
+    #navbar #projects-experience-nav {
         display: none;
     }
-    
-    
+
+
     #navbar li {
         margin: auto;
     }
 
     #navbar a {
         text-align: center;
-        display:block;
+        display: block;
     }
-    
+
     #leftside div {
         width: 100%;
     }
-    
-    #leftside, #leftside div:last-child
-    {
+
+    #leftside,
+    #leftside div:last-child {
         padding-bottom: 0;
         margin-bottom: 0;
     }
-    
-    #contactinfo
-    {
+
+    #contactinfo {
         padding-top: 1em;
         border-top: 2px grey solid;
     }
@@ -856,51 +868,48 @@ footer p:first-of-type {
 
 
 @media screen and (max-width: 450px) {
-    
-    
+
+
     html,
     body {
-    font-size: 85%;
+        font-size: 85%;
     }
-    
-    
+
+
 }
 
 @media screen and (max-width: 375px) {
-    
+
     html,
     body {
-    font-size: 80%;
+        font-size: 80%;
     }
-    
+
     footer {
         grid-template-columns: 1fr 1fr;
     }
-    
-    
+
+
     footer p {
         font-size: 1.15em;
     }
-    
-    footer p:first-of-type{
+
+    footer p:first-of-type {
         padding-right: 15%;
     }
-    
-    footer p:last-of-type{
+
+    footer p:last-of-type {
         padding-right: 10%;
     }
-    
+
 }
 
 @media screen and (max-width: 325px) {
-    
+
     html,
     body {
-    font-size: 77.5%;
+        font-size: 77.5%;
     }
-    
-    
+
+
 }
-
-
-

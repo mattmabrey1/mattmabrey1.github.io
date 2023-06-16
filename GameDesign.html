@@ -12,11 +12,10 @@
 <body>
     <header>
         <h1>MATTHEW MABREY</h1>
-        
+
         <ul id="navbar">
             <li><a id="overview" href="index.html">Overview</a></li>
-            <li><a id="aboutMe" href="AboutMe.html">About Me</a></li>
-            <li><a id="projects-experience-nav" href="Projects.html">Projects &amp; Experience</a><a id="projects-nav" href="Projects.html">Projects</a></li>
+            <li><a id="projects-nav" href="Projects.html">Projects</a></li>
             <li><a id="gameDesign" href="GameDesign.html">Game Design</a></li>
         </ul>
     </header>
@@ -25,9 +24,9 @@
         <section>
             <h2>Game Design Ideas</h2>
             <div>
-                <a href="TFT-Primordial-Forces.pdf" target="_blank" class="imglink" id="imglink1"><img src="tft-set-sample.png" alt="project1" id="project1" width="700"></a>
+                <a href="Assets/Documents/TFT-Primordial-Forces.pdf" target="_blank" class="imglink" id="imglink1"><img src="Assets/Pictures/tft-set-sample.png" alt="project1" id="project1" width="700"></a>
                 <p>
-                    <strong>"Teamfight Tactics" Primordial Set</strong>- Independent project created for fun where I designed an expansion set for the popular autochess game <em>Teamfight Tactics</em> developed by Riot Games. 
+                    <strong>"Teamfight Tactics" Primordial Set</strong>- Independent project created for fun where I designed an expansion set for the popular autochess game <em>Teamfight Tactics</em> developed by Riot Games.
                 </p>
             </div>
         </section>
@@ -37,7 +36,7 @@
         <p>&#9400; 2020 <strong>Matthew Mabrey</strong></p>
         <p>
             <a href="mailto:mattmabrey1@gmail.com">Email</a>
-            // <a href="https://github.com/mattmabrey1" target="_blank">Github</a> 
+            // <a href="https://github.com/mattmabrey1" target="_blank">Github</a>
             // <a href="https://www.linkedin.com/in/matthewmabrey" target="_blank">LinkedIn</a>
         </p>
     </footer>
@@ -47,33 +46,31 @@
         $(document).ready(function() {
 
             $("#gameDesign").addClass("active");
-            
-            
+
+
             var projectsArray = ["#project1"];
             var imglinksArray = ["#imglink1"];
-            
-            
-            $(projectsArray[0]).on('load', function(){
-                    $(imglinksArray[0]).height($(projectsArray[0]).height());
+
+
+            $(projectsArray[0]).on('load', function() {
+                $(imglinksArray[0]).height($(projectsArray[0]).height());
             });
-        
+
             $(imglinksArray[0]).height($(projectsArray[0]).height());
-        
-            $(window).resize(function(){
-                
-                    i = 0;
-                
-                    for(i = 0; i < projectsArray.length; ++i){
-                
-                        $(imglinksArray[i]).height($(projectsArray[i]).height());
-                
-                    }
-                
+
+            $(window).resize(function() {
+
+                i = 0;
+
+                for (i = 0; i < projectsArray.length; ++i) {
+
+                    $(imglinksArray[i]).height($(projectsArray[i]).height());
+
+                }
+
             });
-            
-        
+
+
         });
     </script>
-</body>
-
-</html>
+</body></html>
