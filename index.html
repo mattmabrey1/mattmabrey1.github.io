@@ -15,42 +15,26 @@
 
         <ul id="navbar">
             <li><a id="overview" href="index.html">Overview</a></li>
-            <li><a id="aboutMe" href="AboutMe.html">About Me</a></li>
-            <li><a id="projects-experience-nav" href="Projects.html">Projects &amp; Experience</a><a id="projects-nav" href="Projects.html">Projects</a></li>
+            <li><a id="projects-nav" href="Projects.html">Projects</a></li>
             <li><a id="gameDesign" href="GameDesign.html">Game Design</a></li>
         </ul>
     </header>
 
     <main class="wrapper">
         <section id="leftside">
-            <h2>Latest Projects</h2>
-            <div class="index-projects" id="index-project1">
-                <div class="video-container">
-                    <img src="game-agent-sample.PNG" alt="project1-sample" id="video1-sample" width="700">
-                    <img src="play-button.png" alt="project1-play-button" id="video1-button" class="play-button" width="700">
-                    <iframe id="video1" width="800" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>About Me</h2>
+            <div padding="0">
+                <img src="Assets/Pictures/matt.JPG" alt="profile-pic" width="600">
+                <div>
+                    <p>Hello! My name is Matthew Mabrey and I'm a software engineer based in Irvine, California with a passion for games and coding.
+                    </p>
+                    <p>My current focus is on automation engineering for World of Warcraft at Blizzard Entertainment where I work on test frameworks, headless clients, and continous integration systems.
+                    </p>
+                    <p>
+                        In my free time I've also worked on several indepedent game projects as I enjoy learning the different aspects of how modern games are built.
+                    </p>
+                    <p>When I'm not at the computer, I'm usually with family and friends, playing music, cooking, or hiking.</p>
                 </div>
-                <p><a href="https://github.com/mattmabrey1/AI-Game-Solving-Agent" target="_blank"><strong>Game Solving Agent</strong></a> - Final project for "Artificial Intelligence" course at TCNJ during the Spring 2020 semester. Researched and tested several artificial intelligence techniques to design a rational game solving agent that could successfully complete all 10 stages of the arcade game by avoiding obstacles and adversaries, while also attempting to maximize it's score through the collection of fruits and bonus targets. <em class="tools-used">- [Python, Python Packages: Numpy, Pygame, Python Arcade Library]</em></p>
-            </div>
-            <div class="index-projects" id="index-project2">
-                <div class="video-container">
-                    <img src="demolition-sample.png" alt="project2-sample" id="video2-sample" width="700">
-                    <img src="play-button.png" alt="project2-play-button" id="video2-button" class="play-button" width="700">
-                    <iframe id="video2" width="800" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <p><a href="https://github.com/mattmabrey1/Demolition-Derby-Game" target="_blank"><strong>Demolition Derby Video Game</strong></a> - Independent project where each player controls a car with one randomly getting assigned a transferrable bomb with a time limit and the goal of the game is to be the last car standing. Over the course of this project I learned how to implement multiplayer using a networking framework and gained experience using Remote Procedure Calls [RPCS], Events, and Object Synchronization across multiple clients. In the future I plan on adding deformable meshes on collisions and AI players. <em class="tools-used">- [C#, Unity Engine, Blender, Photon Networking Framework]</em></p>
-            </div>
-            <div class="index-projects" id="index-project3">
-                <div class="video-container">
-                    <img src="gameplay-sample.png" alt="project3-sample" id="video3-sample" width="700">
-                    <img src="play-button.png" alt="project3-play-button" id="video3-button" class="play-button" width="700">
-                    <iframe id="video3" width="800" height="400" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <p><strong>9 Circles Video Game Demo</strong> - Term project for <em>Games II</em> course at TCNJ during the Spring 2020 semester. Worked on a small team to create a roguelike video game centered on a paladin traversing the nine circles of hell to defeat Satan. Responsibilities included all programming, user interface, item and ability design, and spell effects. Over the course of the project I learned a lot about game design and subjects like procedural animation, shaders and particle systems, and AI navigation through navigation meshes. <em class="tools-used">- [C#, Unity Engine, Blender]</em></p>
-            </div>
-            <div class="index-projects" id="index-project4">
-                <a href="https://github.com/mattmabrey1/Kalman-Filter" target="_blank" class="imglink" id="imglink4"><img src="kalman-filter-sample.png" alt="project4" id="project4" width="800"></a>
-                <p><a href="https://github.com/mattmabrey1/Kalman-Filter" target="_blank"><strong>Kalman Filter Extra Credit</strong></a> - Extra credit project for "Artificial Intelligence" course at TCNJ during the Spring 2020 semester. The program uses Kalman filtering, a common technique used for object tracking, to predict the actual water level of a water tank over time from noisy and inaccurate observations. Three scenarios are assessed, a water tank with a constant water level, a water tank that's filling with water at a constant rate, and a sloshing water tank where the water is sloshing back and forth in a sin wave function <em class="tools-used">- [Python, Python Packages: Numpy, Matlibplot]</em></p>
             </div>
 
         </section>
@@ -58,7 +42,7 @@
             <section id="contactinfo">
                 <h2>Contact Information</h2>
                 <ul>
-                    <li><strong>Resume</strong> <br>> <a href="matthew-mabrey-resume-2021.pdf" target="_blank">matthew-mabrey-resume-2021.pdf</a>
+                    <li><strong>Resume</strong> <br>> <a href="Assets/Documents/matthew-mabrey-resume.pdf" target="_blank">matthew-mabrey-resume.pdf</a>
                     </li>
                     <li><strong>Email</strong> <br>> <a href="mailto:mattmabrey1@gmail.com">mattmabrey1@gmail.com</a>
                     </li>
@@ -68,148 +52,51 @@
                 </ul>
             </section>
 
+            <section id="experience">
+                <h2>Experience </h2>
+                <div id="experience-divs">
+                    <div class="experience-div">
+                        <p class="experience-title"><strong>Software Engineer · Blizzard</strong></p>
+                        <p class="experience-date"> Jan. 2022 - Present</p>
+                        <p class="experience-description">Developed and coordinated large scale automated testing to validate client & server performance and functionality of game systems for World of Warcraft.
+                        </p>
+                    </div>
+
+                    <div class="experience-div">
+                        <p class="experience-title"><strong>Software Engineering Intern · Blizzard</strong></p>
+                        <p class="experience-date">May - Aug. 2021</p>
+                        <p class="experience-description">Utilized headless clients to test World of Warcraft gameplay and validate rewards generated. Implemented artificial intelligence for headless clients to prioritize and complete in game objectives.
+                        </p>
+                    </div>
+
+                    <div class="experience-div">
+                        <p class="experience-title"><strong>Green TCNJ Environmental App · The College of New Jersey</strong></p>
+                        <p class="experience-date">Fall 2020</p>
+                        <p class="experience-description">Created a cross platform mobile app for The College of New Jersey's environmental and recycling initiatives.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             <section id="aboutme">
                 <h2>Education</h2>
-                <p> <strong>The College of New Jersey</strong> - Anticipated Fall 2021<br> <em>Bachelors of Science, Computer Science</em> <br><strong> 4.0/4.0 GPA</strong></p>
-                <p><strong>Rowan College at Burlington County </strong> - Summer 2019<br> <em>Associates of Science, Computer Science <br></em> <strong> 3.93/4.0 GPA</strong> </p>
-                <strong>Relevant Coursework: </strong>
-                <ul id="courselist">
-                    <li>Accelerated Computer Science I &amp; II</li>
-                    <li>Calculus II &amp; Analytic Geometry</li>
-                    <li>Operating <br>Systems</li>
-                    <li>Computer <br>Networking</li>
-                    <li>Computer<br> Architecture</li>
-                    <li>Discrete Structures <br> &amp; Mathematics</li>
-                    <li>Analysis of <br>Algorithms</li>
-                    <li>Fundamentals of Web Design</li>
-                    <li>3D Game <br>Development</li>
-                    <li>Artificial <br>Intelligence</li>
-                    <li>Machine &amp; Assembly Language <br>Programming</li>
-                    <li>Object-oriented Programming &amp; Data Abstraction</li>
-                </ul>
-            </section>
-
-            <section id="research">
-                <h2>Research </h2>
-                <p class="research-title"><strong>Green TCNJ Environmental App</strong> - Fall 2020</p>
-                <p class="research-school"><em>The College of New Jersey, Mentored Research</em></p>
-                <p> Creating a cross platform mobile web application for The College of New Jersey’s environmental and recycling initiatives. Building the front end mobile application and web browser admin portal to display and manage database information and implementing the database and associated functionality needed for recycling material guidelines, environmental events, and
-relevant news.</p>
-                <p class="research-title"><strong>Device Security</strong> - Fall 2018 </p>
-                <p class="research-school"><em>Rowan College at BC, Undergraduate Research</em> </p>
-                <p> Worked with a group of fellow Computer Science students to research consumer device security. My section focused on comparing the malware and virus vulnerabilties of popular mobile device operating systems aswell as assessing the security options currently available to consumers. <br><br><strong>Research Paper: </strong>
-                    <a href="device-security-research.pdf" target="_blank">device-security-research.pdf</a></p>
-            </section>
-
-            <section id="skills">
-                <h2>Skills</h2>
-                <h3>Languages</h3>
-                <p>Strong with C, C#, C++, Java, and Python </p>
-                <div class="skillBar">
-                    <div id="strong"></div>
-                </div>
-                <p>Proficient with HTML, CSS, Javascript, SQL, and PHP</p>
-                <div class="skillBar">
-                    <div class="proficient"></div>
-                </div>
-                <h3>Tools</h3>
-                <p>Proficient with Microsoft Office Suite and Photoshop</p>
-                <div class="skillBar">
-                    <div class="proficient"></div>
-                </div>
-                <p>Intermediate with Blender and Unity Engine</p>
-                <div class="skillBar">
-                    <div id="intermediate"></div>
-                </div>
+                <p> <strong>The College of New Jersey</strong> December 2021<br> <em>Bachelors of Science, Computer Science</em> <br><strong> 4.0/4.0 GPA</strong></p>
+                <p><strong>Honors:</strong> Summa Cum Laude, TCNJ Computer Science Award, and the UPE Computing Honor Society</p>
             </section>
         </section>
     </main>
 
     <footer>
-        <p>&#9400; 2020 <strong>Matthew Mabrey</strong></p>
+        <p>&#9400; 2023 <strong>Matthew Mabrey</strong></p>
         <p><a href="mailto:mattmabrey1@gmail.com">Email</a> //
             <a href="https://github.com/mattmabrey1" target="_blank">Github</a> // <a href="https://www.linkedin.com/in/matthewmabrey" target="_blank">LinkedIn</a> </p>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
-
-
-            // Video Playing and IFrame Loading on play button click
-            var video1 = $("#video1");
-            var video2 = $("#video2");
-            var video3 = $("#video3");
-
-            var video1URL = "https://www.youtube.com/embed/r8z812sCfQc?autoplay=1";
-            var video2URL = "https://www.youtube.com/embed/vfPlD6gvkog?autoplay=1";
-            var video3URL = "https://www.youtube.com/embed/3KoSr7Jm_Zc?autoplay=1";
-
-            video1.css("opacity", "0");
-            video1.css("visibility", "hidden");
-
-            video2.css("opacity", "0");
-            video2.css("visibility", "hidden");
-
-            video3.css("opacity", "0");
-            video3.css("visibility", "hidden");
-
-            // On play button click, load the video and hide play button and sample image
-            $("#video1-button").click(function() {
-                video1.addClass("visible");
-                video1.css("opacity", "100");
-                video1.css("visibility", "visible");
-                video1.attr('src', video1URL);
-
-                $(this).addClass("hidden");
-                $("#video1-sample").addClass("hidden");
-            });
-
-            $("#video2-button").click(function() {
-                video2.addClass("visible");
-                video2.css("opacity", "100");
-                video2.css("visibility", "visible");
-                video2.attr('src', video2URL);
-
-                $(this).addClass("hidden");
-                $("#video2-sample").addClass("hidden");
-            });
-
-            $("#video3-button").click(function() {
-                video3.addClass("visible");
-                video3.css("opacity", "100");
-                video3.css("visibility", "visible");
-                video3.attr('src', video3URL);
-
-                $(this).addClass("hidden");
-                $("#video3-sample").addClass("hidden");
-            });
-
             $("#overview").addClass("active");
-            
-            // Project Image Links On Hover Resizing
-            
-            // Set "Link ->" image link height to be equal to the image behind it
-            $("#project4").on('load', function() {
-                $("#imglink4").height($("#project4").height());
-            });
-
-            
-            var i = 0;
-            
-            // Resize the "Link ->" image link whenever the window is resized
-            $(window).resize(function() {
-                i = 0;
-                $("div", "#leftside").each(function() {
-
-                    $("#imglink4").height($("#project4").height());
-                    i = i + 1;
-                });
-                
-                
-            });
-
-
         });
 
     </script>
